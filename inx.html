@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="box">
+
+        <div class="scroll">
+            <select name="fields" id="course">
+                <option value="Everything" name="option">Everything</option>
+                <option value="Software Development" onclick="f1()" id="sd">Software Development</option>
+                <option value="Web Development">Web Development</option>
+                <option value="Data Analyst">Data Analyst</option>
+                <option value="IT Consultent">IT Consultent</option>
+                <option value="Network Administrator">Network Administrator</option>
+                <input type="search" placeholder="Search Anything" id="search">
+                <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+
+            </select>
+        </div>
+    </div>
+
+    <script>
+        let search = document.getElementById('search');
+        let select = document.getElementById('course');
+
+        select.addEventListener("click", () => {
+            search.setAttribute("placeholder", "Search in " + select.value);
+        })
+    </script>
+</body>
+
+</html>

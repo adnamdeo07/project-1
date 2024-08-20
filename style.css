@@ -1,0 +1,79 @@
+.box{
+    height:35vh;
+    width:100%;
+    background-color: #37c7cc;
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+    border-radius: 15px;
+}
+
+.scroll{
+   background-color: #fff;
+    display: flex;
+    height: 40px;
+    width:200%;
+    border-radius: 10px;
+    color:rgba(63, 4, 60, 0.824);
+    margin: 20%;
+    text-align: center;
+   
+}
+
+.scroll:focus{
+    outline: 1px black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#search{
+    width: 120%;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+   
+}
+
+#course{
+    width:45%;
+    height:40px;
+    border-radius: 10px;
+    z-index: 1;
+    background-color: #51174d;
+    color:white
+}
+
+input:focus {
+    outline: none;
+
+}
+
+option{
+    background-color: #fff;
+    color: black;
+    margin-top: 10px;
+   
+    
+}
+.search-icon{
+    width: 5%;
+}
+
+input::placeholder{
+    margin-top: 6px;
+    margin-left: 25%;
+    font-weight: bold;
+    margin-left: 15px;
+    font-size: larger;
+    
+    
+}
+
+i{
+
+    margin-right: 10px;
+    margin-top: 6px;
+    font-weight: bolder;
+    margin-left: 15px;
+    
+    
+}
